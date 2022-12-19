@@ -11,4 +11,4 @@ quarkus:
 
   liquibase:
     migrate-at-start: true
-    change-log: db/changeLog.yaml
+    change-log: db/changeLog-root.yaml
