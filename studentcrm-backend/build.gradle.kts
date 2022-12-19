@@ -24,6 +24,7 @@ dependencies {
     implementation("io.quarkus:quarkus-arc")
     implementation("io.quarkus:quarkus-config-yaml")
     implementation("io.quarkus:quarkus-liquibase")
+    implementation("io.quarkus:quarkus-hibernate-validator")
     testImplementation("org.testcontainers:postgresql:1.17.6")
     testImplementation("io.quarkus:quarkus-junit5")
     testImplementation("io.rest-assured:rest-assured")
