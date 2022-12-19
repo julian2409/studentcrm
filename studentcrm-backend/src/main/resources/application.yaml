@@ -1,1 +1,3 @@
-q
+quarkus:
+  http:
+    port: 8080
