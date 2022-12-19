@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: JSA
+      changes:
+        - createTable:
+            tableName: student
+            columns:
+              - column:
+                  name: id
+                  type: INT
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+                    tableName: student
+              - column:
+                  name: firstName
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: false
+                    tableName: student
