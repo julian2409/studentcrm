@@ -1,11 +1,6 @@
 package nt.jsa.model
 
-import javax.persistence.Column
-import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
-import javax.persistence.ManyToMany
+import javax.persistence.*
 
 @Entity
 class Course {
@@ -19,6 +14,6 @@ class Course {
     @Column(name = "course_description")
     lateinit var courseDescription: String
 
-    @ManyToMany(mappedBy = "courses")
-    lateinit var students: List<Student>
+    @ManyToMany(mappedBy = "courses", fetch = FetchType.LAZY)
+    var students: List<Student> = listOf()
 }
