@@ -3,14 +3,13 @@ package nt.jsa.service
 import nt.jsa.model.Student
 import nt.jsa.repository.StudentRepository
 import java.lang.Exception
-import java.util.stream.Collectors
 import javax.enterprise.context.ApplicationScoped
 import javax.inject.Inject
 
 @ApplicationScoped
 class StudentService {
     @Inject
-    lateinit var studentRepository: StudentRepository
+    private lateinit var studentRepository: StudentRepository
 
     fun createStudent(firstName: String, lastName: String, email: String): Student {
         val student = Student()

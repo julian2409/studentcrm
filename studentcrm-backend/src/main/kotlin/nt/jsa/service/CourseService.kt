@@ -7,7 +7,7 @@ import javax.inject.Inject
 @ApplicationScoped
 class CourseService {
     @Inject
-    lateinit var courseRepository: CourseRepository
+    private lateinit var courseRepository: CourseRepository
 
 //    fun createCourse()
 //

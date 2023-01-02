@@ -5,6 +5,6 @@ import nt.jsa.model.Student
 import javax.enterprise.context.ApplicationScoped
 
 @ApplicationScoped
-class StudentRepository: PanacheRepository<Student> {
+class StudentRepository : PanacheRepository<Student> {
     fun findByEmail(email: String) = find("email", email).firstResult()
 }

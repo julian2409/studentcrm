@@ -5,6 +5,6 @@ import nt.jsa.model.Course
 import javax.enterprise.context.ApplicationScoped
 
 @ApplicationScoped
-class CourseRepository: PanacheRepository<Course> {
+class CourseRepository : PanacheRepository<Course> {
     fun findByCourseName(courseName: String) = find("courseName", courseName).firstResult()
 }
